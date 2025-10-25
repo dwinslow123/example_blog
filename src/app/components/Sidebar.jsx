@@ -2,7 +2,7 @@ import Link from "next/link";
 import HomeImg from "../../../public/home.svg";
 import PencilImg from "../../../public/pencil.svg";
 import LoginImg from "../../../public/login.svg";
-import LogoutImg from "../../../public/logout.svg";
+// import LogoutImg from "../../../public/logout.svg";
 
 const Sidebar = () => {
     return (
