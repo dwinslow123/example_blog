@@ -1,8 +1,13 @@
+'use client';
+import { SessionProvider } from "next-auth/react";
+import Link from "next/link";
+
 export default function Home() {
   return (
-    <main>
-      <h1>Welcome to My Next.js App</h1>
-    </main>
+    <SessionProvider>
+      <main>
+        <Link href="/dashboard">Go to Dashboard</Link>
+      </main>
+    </SessionProvider>
   );
 }
-  

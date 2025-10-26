@@ -1,7 +1,7 @@
 import {useEffect, useState } from 'react';
 
 const getWindowDimensions = () => {
-    if (typeof window === 'undefined') return;
+    if (typeof window === 'undefined') return null;
     
     const { innerWidth: width, innerHeight: height } = window;
     return {
@@ -10,8 +10,7 @@ const getWindowDimensions = () => {
     };
 }
 
-
-
+/** Custom hook to find window dimensions */
 const useWindowDimensions = () => {
     const [windowDimensions, setWindowDimensions] = useState(getWindowDimensions());
 
